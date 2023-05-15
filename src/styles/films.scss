@@ -1,0 +1,25 @@
+@use 'variaveis';
+
+.films {
+    padding: 3.2vw;
+
+    h2 {
+        font-size: 32px;
+    }
+
+    &__imgs {
+        display: flex;
+        justify-content: center;
+
+        img {
+            margin: 8px;
+            width: 350px;
+        }
+    }
+
+    &__text {
+        padding-top: 40px;
+        text-align: center;
+    }
+    
+}
