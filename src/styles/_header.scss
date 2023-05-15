@@ -47,6 +47,18 @@
 
        text-align: end;
 
+       @media (max-width: 767px) {
+        text-align: center;
+        padding-top: 8px;
+        font-size: 1px;
+       }
+
+       
+       @media (min-width: 768px) and (max-width: 1023px) {
+        padding-top: 8px;
+        text-align: center;
+    }
+
         &__button {
             cursor: pointer;
             padding: 8px;
@@ -58,6 +70,10 @@
 
             &:hover {
                 background-color: variaveis.$secondaryTextColor;
+            }
+
+            @media (max-width: 767px) {
+                margin: 8px 0 0 0;
             }
         }
     }

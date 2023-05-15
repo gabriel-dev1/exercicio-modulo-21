@@ -3,6 +3,10 @@
 .films {
     padding: 3.2vw;
 
+    @media (max-width: 768px) {
+       
+    }
+
     h2 {
         font-size: 32px;
     }
@@ -11,15 +15,34 @@
         display: flex;
         justify-content: center;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         img {
             margin: 8px;
             width: 350px;
+
+            @media (max-width: 767px) {
+                width: 190px;
+                margin-bottom: 8px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                width: 170px;
+            }
         }
     }
 
     &__text {
         padding-top: 40px;
         text-align: center;
+
+        @media (max-width: 767px) {
+           text-align: start;
+           font-weight: lighter;
+        }
     }
     
 }
+

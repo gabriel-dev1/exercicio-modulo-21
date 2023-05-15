@@ -8,19 +8,40 @@
         justify-content: center;
         align-items: center;
 
+        @media (max-width: 767px) {
+            display: block;
+        }
+
         &__title {
             padding-left: 32px;
             font-size: 32px;
+
+            @media (max-width: 767px) {
+                padding: 0;
+            }
         }
 
         &__text {
             padding-left: 32px;
             color: variaveis.$primaryTextColor;
+
+            @media (max-width: 767px) {
+                padding: 0;
+            }
+
         }
     }
 
     img {
         width: 400px;
+
+        @media (max-width: 767px) {
+            width: 200px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            width: 170px;
+        }
     }
 
 }
